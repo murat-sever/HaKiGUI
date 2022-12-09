@@ -3,6 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import QProgressBar
 import os
 import time
+import datetime
 
 # GUI dosyasını yükle
 UIClass, UIWidget = uic.loadUiType("RTLGUINEW_LATEST.ui")
@@ -138,7 +139,10 @@ class workerThread(QThread):
         self.CenterFreq = CenterFreq
 
     def run(self):
-        cmdMsg = "rtl_sdr -f " + str(self.CenterFreq) + " -s " + str(self.Bw) + " -n " + str(self.Dur * self.Bw) + " test"
+        filename = ""
+        current_time = datetime.datetime.now()
+        filename = str(current_time) + " " + str(self.CenterFreq) + " " + str(self.Bw)
+        cmdMsg = "rtl_sdr -f " + str(self.CenterFreq) + " -s " + str(self.Bw) + " -n " + str(self.Dur * self.Bw) + filename
         os.system(cmdMsg)
 
 class narrowFmThread(QThread):
