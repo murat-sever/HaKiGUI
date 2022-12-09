@@ -1,5 +1,5 @@
 # HaKiGUI
-#Config Dosyası Adları
+#Config Dosyası Adları: 
 narrowConf.conf
 wideConf.conf
 ismConf.conf
