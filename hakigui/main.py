@@ -41,13 +41,6 @@ class GUIFunction(UIWidget,UIClass):
         self.radioButton_5.clicked.connect(self.updateDur2)
         self.radioButton_6.clicked.connect(self.updateDur3)
 
-        # if self.radioButton_4.isChecked():
-        #     self.Dur = 15
-        # elif self.radioButton_5.isChecked():
-        #     self.Dur = 30
-        # elif self.radioButton_6.isChecked():
-        #     self.Dur = 60
-
     def updateBw1(self):
         self.Bw = 2400000
     def updateBw2(self):
@@ -176,5 +169,5 @@ if __name__ == "__main__":
     print(size.height())
     MainWindow = QtWidgets.QMainWindow()
     ui = GUIFunction(size.width(),size.height())
-    ui.show()
+    ui.showFullScreen()
     sys.exit(app.exec_())
