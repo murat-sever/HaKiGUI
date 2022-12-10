@@ -33,6 +33,7 @@ class GUIFunction(UIWidget,UIClass):
         self.toolButton_4.clicked.connect(self.adsbFunction)
         self.toolButton_5.clicked.connect(self.recordFunction)
         self.pushButton.clicked.connect(self.startRecord)
+        self.pushButton_2.clicked.connect(self.returnMain)
         self.radioButton.clicked.connect(self.updateBw1)
         self.radioButton_2.clicked.connect(self.updateBw2)
         self.radioButton_3.clicked.connect(self.updateBw3)
@@ -113,6 +114,8 @@ class GUIFunction(UIWidget,UIClass):
         self.worker.freqSet(self.CenterFreq)
         self.worker.start()
         # self.worker.finished.connect(self.workerFinished)
+    def returnMain(self):
+        self.stackedWidget.setCurrentWidget(self.page_2)
 
 class updateProgress(QThread):
     Dur = 0
