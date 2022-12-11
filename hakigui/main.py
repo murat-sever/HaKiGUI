@@ -140,7 +140,7 @@ class workerThread(QThread):
         current_date = current_time.date()
         current_clock = current_time.time()
         filename = str(current_date) + "_" + str(current_clock) + "_" + str(self.CenterFreq) + "_" + str(self.Bw) + ".cu8"
-        cmdMsg = "rtl_sdr -f " + str(self.CenterFreq) + " -s " + str(self.Bw) + " -n " + str(self.Dur * self.Bw) + filename
+        cmdMsg = "rtl_sdr -f " + str(self.CenterFreq) + " -s " + str(self.Bw) + " -n " + str(self.Dur * self.Bw) + " " + filename
         os.system(cmdMsg)
 
 class narrowFmThread(QThread):
