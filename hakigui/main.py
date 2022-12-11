@@ -18,7 +18,7 @@ class GUIFunction(UIWidget,UIClass):
     # Buton fonksiyonları
     def __init__(self,width,height):
         super(GUIFunction,self).__init__()
-        self.setFixedSize(width,height)
+        #self.setFixedSize(width,height)
         self.setupUi(self)
         #slider
         self.horizontalSlider.valueChanged.connect(self.updateFreq)
@@ -171,5 +171,5 @@ if __name__ == "__main__":
     print(size.height())
     MainWindow = QtWidgets.QMainWindow()
     ui = GUIFunction(size.width(),size.height())
-    ui.showFullScreen()
+    ui.showMaximized()
     sys.exit(app.exec_())
