@@ -616,7 +616,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>icons/2322549.png</normaloff>icons/2322549.png</iconset>
+            <normaloff>icons/flight.png</normaloff>icons/flight.png</iconset>
           </property>
           <property name="iconSize">
            <size>
