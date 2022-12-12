@@ -65,11 +65,13 @@ class GUIFunction(UIWidget,UIClass):
         self.toolButton_3.setEnabled(False)
         self.toolButton_4.setEnabled(False)
         self.toolButton_5.setEnabled(False)
+        self.toolButton_6.setEnabled(False)
         QTimer.singleShot(5000,lambda:self.toolButton.setDisabled(False))
         QTimer.singleShot(5000, lambda: self.toolButton_2.setDisabled(False))
         QTimer.singleShot(5000, lambda: self.toolButton_3.setDisabled(False))
         QTimer.singleShot(5000, lambda: self.toolButton_4.setDisabled(False))
         QTimer.singleShot(5000, lambda: self.toolButton_5.setDisabled(False))
+        QTimer.singleShot(5000, lambda: self.toolButton_6.setDisabled(False))
     def progress(self,val):
         self.progressBar.setValue(val)
 
