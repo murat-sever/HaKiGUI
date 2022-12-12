@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>803</width>
-    <height>606</height>
+    <width>941</width>
+    <height>713</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout_7">
@@ -71,7 +71,7 @@
              </font>
             </property>
             <property name="text">
-             <string>Choose Center Frequency in MHz:</string>
+             <string>Merkez Freakns (MHz):</string>
             </property>
            </widget>
           </item>
@@ -84,7 +84,7 @@
              </font>
             </property>
             <property name="text">
-             <string>RECORDING OPTIONS</string>
+             <string>KAYDETME SEÇENEKLERİ</string>
             </property>
            </widget>
           </item>
@@ -114,7 +114,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Bandwidth:</string>
+               <string>Bant Genişliği:</string>
               </property>
              </widget>
             </item>
@@ -147,7 +147,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Duration:</string>
+               <string>Süre:</string>
               </property>
              </widget>
             </item>
@@ -342,7 +342,7 @@
              </font>
             </property>
             <property name="text">
-             <string> Recording Progress:</string>
+             <string>Kaydetme İlerlemesi:</string>
             </property>
            </widget>
           </item>
@@ -467,7 +467,7 @@
       <widget class="QWidget" name="page_2">
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="2">
-         <widget class="QToolButton" name="toolButton_5">
+         <widget class="QToolButton" name="toolButton_6">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -481,11 +481,11 @@
            </font>
           </property>
           <property name="text">
-           <string>RECORD</string>
+           <string>AM</string>
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>icons/binary-code.png</normaloff>icons/binary-code.png</iconset>
+            <normaloff>icons/2214949.png</normaloff>icons/2214949.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -699,21 +699,34 @@
               </property>
              </spacer>
             </item>
-            <item row="0" column="1">
-             <spacer name="verticalSpacer">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
+            <item row="0" column="0" colspan="2">
+             <widget class="QPushButton" name="toolButton_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
               </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Expanding</enum>
+              <property name="font">
+               <font>
+                <family>MS Reference Sans Serif</family>
+                <pointsize>28</pointsize>
+               </font>
               </property>
-              <property name="sizeHint" stdset="0">
+              <property name="text">
+               <string>KAYDET</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/record.png</normaloff>icons/record.png</iconset>
+              </property>
+              <property name="iconSize">
                <size>
-                <width>20</width>
-                <height>50</height>
+                <width>30</width>
+                <height>30</height>
                </size>
               </property>
-             </spacer>
+             </widget>
             </item>
            </layout>
           </item>
@@ -730,8 +743,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>803</width>
-     <height>22</height>
+     <width>941</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -740,7 +753,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
