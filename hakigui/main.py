@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QProgressBar
 import os
 import time
 import datetime
+import subprocess
 
 # GUI dosyasını yükle
 UIClass, UIWidget = uic.loadUiType("RTLGUINEW_LATEST.ui")
@@ -145,13 +146,25 @@ class workerThread(QThread):
 
 class narrowFmThread(QThread):
     def run(self):
-        os.system("gqrx -c narrowConf.conf")
+        p1 = subprocess.Popen(["gqrx","-c","narrowConf.conf"])
+        time.sleep(10)
+        p2 = subprocess.Popen(["sh","startDsp.sh"])
+        p1.wait()
+        p2.wait()
 class wideFmThread(QThread):
     def run(self):
-        os.system("gqrx -c wideConf.conf")
+        p1 = subprocess.Popen(["gqrx","-c","wideConf.conf"])
+        time.sleep(10)
+        p2 = subprocess.Popen(["sh","startDsp.sh"])
+        p1.wait()
+        p2.wait()
 class ismThread(QThread):
     def run(self):
-        os.system("gqrx -c ismConf.conf")
+        p1 = subprocess.Popen(["gqrx","-c","ismConf.conf"])
+        time.sleep(10)
+        p2 = subprocess.Popen(["sh","startDsp.sh"])
+        p1.wait()
+        p2.wait()
 class adsbThread(QThread):
     def run(self):
         print("empty")
