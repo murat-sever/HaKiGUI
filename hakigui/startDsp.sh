@@ -1,2 +1,2 @@
-gqrxWindow=$(xdotool search --name "Gqrx 2.9")
+gqrxWindow=$(xdotool search --name "Gqrx ")
 xdotool windowactivate --sync $gqrxWindow key ctrl+d 
