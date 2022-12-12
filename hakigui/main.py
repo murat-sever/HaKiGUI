@@ -33,6 +33,7 @@ class GUIFunction(UIWidget,UIClass):
         self.toolButton_3.clicked.connect(self.ismFunction)
         self.toolButton_4.clicked.connect(self.adsbFunction)
         self.toolButton_5.clicked.connect(self.recordFunction)
+        self.toolButton_6.clicked.connect(self.amFunction)
         self.pushButton.clicked.connect(self.startRecord)
         self.pushButton_2.clicked.connect(self.returnMain)
         self.radioButton.clicked.connect(self.updateBw1)
@@ -92,6 +93,10 @@ class GUIFunction(UIWidget,UIClass):
     def adsbFunction(self):
         self.sleep5sec()
         self.worker = adsbThread()
+        self.worker.start()
+    def amFunction(self):
+        self.sleep5sec()
+        self.worker = amThread()
         self.worker.start()
     def recordFunction(self):
         self.stackedWidget.setCurrentWidget(self.page)
@@ -161,6 +166,13 @@ class wideFmThread(QThread):
 class ismThread(QThread):
     def run(self):
         p1 = subprocess.Popen(["gqrx","-c","ismConf.conf"])
+        time.sleep(10)
+        p2 = subprocess.Popen(["sh","startDsp.sh"])
+        p1.wait()
+        p2.wait()
+class amThread(QThread):
+    def run(self):
+        p1 = subprocess.Popen(["gqrx","-c","amConf.conf"])
         time.sleep(10)
         p2 = subprocess.Popen(["sh","startDsp.sh"])
         p1.wait()
