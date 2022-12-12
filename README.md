@@ -12,6 +12,6 @@
 * "autoStart.sh" dosyasının içi, Gui dosyasının dizinine göre düzenlenir.
 
 ## Yüklenmesi Gereken Araçlar
-# "xdotool" aracı aşağıdaki şekilde yüklenebilir:
+### "xdotool" aracı aşağıdaki şekilde yüklenebilir:
 * sudo apt-get update
 * sudo apt-get install xdotool
