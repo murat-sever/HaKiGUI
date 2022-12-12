@@ -15,3 +15,7 @@
 ### "xdotool" aracı aşağıdaki şekilde yüklenebilir:
 * sudo apt-get update
 * sudo apt-get install xdotool
+
+## Tam Ekran Modu İçin Yapılması Gerekenler
+* Taskbar'a sağ tıklanır ve "Panel Settings" seçilir.
+* Açılan pencerede "Advanced"e tıklanır ve "Minimize panel when not in use" seçeneği işaretlenir.
