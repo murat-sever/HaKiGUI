@@ -181,11 +181,11 @@ class amThread(QThread):
         p2.wait()
 class adsbThread(QThread):
     def run(self):
-        print("empty")
-    #24 MHz- 1700 MHz
-    # Değişkenler
-    # Fonksiyonlar
-    # Bu fonksiyon
+        p1 = subprocess.Popen(["sh","launchDump.sh"])
+        time.sleep(5)
+        p2 = subprocess.Popen(["chromium-browser","http://localhost:8080"])
+        p1.wait()
+        p2.wait()
 
 # Main function
 if __name__ == "__main__":
