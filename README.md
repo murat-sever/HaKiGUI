@@ -12,12 +12,10 @@
 * "autoStart.sh" dosyasının içi, Gui dosyasının dizinine göre düzenlenir.
 
 ## Yüklenmesi Gereken Araçlar
-1)
-### "xdotool" aracı aşağıdaki şekilde kurulabilir:
+1) ### "xdotool" aracı aşağıdaki şekilde kurulabilir:
 * sudo apt-get update
 * sudo apt-get install xdotool
-2)
-### "dump-1090" aşağıdaki şekilde kurulabilir:
+2) ### "dump-1090" aşağıdaki şekilde kurulabilir:
 * Github reposundan "dump-1090" indirilir.
 * İndirilen dizine girilir ve "make" komutu çalıştırılır.
 * Proje dizininin içindeki "launchDump.sh" dosyasının içindeki path, indirilen "dump-1090" pathine göre düzenlenir.
