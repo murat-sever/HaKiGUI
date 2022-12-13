@@ -20,7 +20,8 @@
 * Github reposundan "dump-1090" indirilir.
 * İndirilen dizine girilir ve "make" komutu çalıştırılır.
 * Proje dizininin içindeki "launchDump.sh" dosyasının içindeki path, indirilen "dump-1090" pathine göre düzenlenir.
-3) ### Chromium Web Browser internetten indirilip kurulmalıdır.
+3) ### Chromium Web Browser aşağıdaki şekilde kurulabilir:
+* Terminalde "sudo apt-get install chromium-browser" yazılır.
 
 
 ## Tam Ekran Modu İçin Yapılması Gerekenler
