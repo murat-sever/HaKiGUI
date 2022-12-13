@@ -3,6 +3,7 @@
 * narrowConf.conf
 * wideConf.conf
 * ismConf.conf
+* amConf.conf
 
 ## Config Dosya Dizini: `/home/.config/gqrx`
 
