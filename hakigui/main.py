@@ -58,7 +58,9 @@ class GUIFunction(UIWidget,UIClass):
         self.Dur = 60
 
 
-
+    def killAdsb(self):
+        p = subprocess.Popen(["sh","killAdsb.sh"])
+        
     def sleep5sec(self):
         self.toolButton.setEnabled(False)
         self.toolButton_2.setEnabled(False)
@@ -81,26 +83,32 @@ class GUIFunction(UIWidget,UIClass):
         CenterFreq = value * 1000000
     #DEmodülasyon için mod tipi seçimi
     def wbfmFunction(self):
+        self.killAdsb()
         self.sleep5sec()
         self.worker = wideFmThread()
         self.worker.start()
     def nbfmFunction(self):
+        self.killAdsb()
         self.sleep5sec()
         self.worker = narrowFmThread()
         self.worker.start()
     def ismFunction(self):
+        self.killAdsb()
         self.sleep5sec()
         self.worker = ismThread()
         self.worker.start()
     def adsbFunction(self):
+        self.killAdsb()
         self.sleep5sec()
         self.worker = adsbThread()
         self.worker.start()
     def amFunction(self):
+        self.killAdsb()
         self.sleep5sec()
         self.worker = amThread()
         self.worker.start()
     def recordFunction(self):
+        self.killAdsb()
         self.stackedWidget.setCurrentWidget(self.page)
     def startRecord(self):
         self.pushButton.setEnabled(False)
