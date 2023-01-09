@@ -665,6 +665,18 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>MS Reference Sans Serif</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>v1.0.0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
