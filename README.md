@@ -26,4 +26,4 @@
 
 ## Tam Ekran Modu İçin Yapılması Gerekenler
 * Taskbar'a sağ tıklanır ve "Panel Settings" seçilir.
-* Açılan pencerede "Advanced"e tıklanır ve "Minimize panel when not in use" seçeneği işaretlenir.
+* Açılan pencerede "Advanced"e tıklanır ve "Minimize panel when not in use" seçeneği işaretlenir. 
